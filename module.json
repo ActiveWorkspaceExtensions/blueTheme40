@@ -1,0 +1,8 @@
+{
+    "name": "blueTheme40",
+    "desc": "This is the blueTheme40 module",
+    "type": [
+        "native"
+    ],
+    "skipTest": true
+}

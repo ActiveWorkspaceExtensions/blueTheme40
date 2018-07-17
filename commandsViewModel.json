@@ -1,0 +1,52 @@
+{
+    "commands": {
+        "plmTheme": {
+            "iconId": "cmdSettings",
+            "title": "{{i18n.plmThemeTitle}}"
+        }
+    },
+    "commandHandlers": {
+        "plmThemeHandler": {
+            "id": "plmTheme",
+            "action": "setplmTheme",
+            "activeWhen": true,
+            "visibleWhen": {
+                "condition": "conditions.supportsplmTheme"
+            },
+            "selectWhen": {
+                "condition": "conditions.isplmTheme"
+            }
+        }
+    },
+    "commandPlacements": {
+        "plmThemePlacement": {
+            "id": "plmTheme",
+            "uiAnchor": "aw_globalToolbar",
+            "priority": -1,
+            "parentGroupId": "Awp0ChangeTheme"
+        }
+    },
+    "actions": {
+        "setplmTheme": {
+            "actionType": "JSFunction",
+            "method": "setTheme",
+            "inputData": {
+                "0": "ui-plmTheme"
+            },
+            "deps": "js/theme.service"
+        }
+    },
+    "conditions": {
+        "supportsplmTheme": {
+            "expression": "!ctx.changeThemeDisabled"
+        },
+        "isplmTheme": {
+            "expression": "ctx.theme === 'ui-plmTheme'"
+        }
+    },
+    "i18n": {
+        "plmThemeTitle": [
+            "mysamplemoduleMessages"
+        ]
+    }
+}

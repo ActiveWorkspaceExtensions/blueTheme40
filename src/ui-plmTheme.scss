@@ -1,0 +1,389 @@
+/* PL Light Theme */
+// NOTE: put light theme updates into _base_lightTheme.scss, they will be propogated to all theme files except the dark theme
+@import 'ui-base-lightTheme';
+@import 'ui-theme';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);/* repaint */
+
+
+.aw-layout-header,
+.aw-layout-progressBar {
+background: #006487;
+background: -moz-linear-gradient(left, #006487 0%, #3c91af 100%);
+background: -webkit-linear-gradient(left, #006487 0%,#3c91af 100%);
+background: linear-gradient(to right, #006487 0%,#3c91af 100%);
+}
+
+.aw-layout-navigationCommandbar {
+background: #006487;
+background: -moz-linear-gradient(top, #006487 0%, #3c91af 100%);
+background: -webkit-linear-gradient(top, #006487 0%,#3c91af 100%);
+background: linear-gradient(to bottom, #006487 0%,#3c91af 100%);
+}
+
+.aw-layout-progressBarFullScreenPanel .aw-layout-progressBar {
+    background: #fff;
+}
+
+.aw-layout-infoCommandbar {
+    background-color: #f0f0f0;
+}
+.aw-layout-navigationCommandbar {
+    background-color: #add8e6;
+}
+
+.aw-layout-locationTitle,
+.aw-layout-header .aw-layout-headerSubTitle,
+.aw-layout-header .aw-layout-headerSubTitle a,
+.aw-search-advancedSearchLink a,
+.aw-layout-navigationCommandbar .aw-theme-iconOutline,
+.aw-layout-navigationCommandbar button, 
+.aw-layout-locationTitlePanel .aw-theme-iconOutline {
+    color: #ffffff;
+    fill: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.aw-commands-commandIconButton.aw-state-selected .aw-theme-iconOutline,
+.aw-base-backButton:hover .aw-theme-iconOutline, 
+.aw-layout-navigationCommandbar .aw-commands-commandIconButton:hover .aw-theme-iconOutline {
+    fill: #1e1e1e;
+}
+
+.aw-layout-header .aw-widgets-propertyLabelTop,
+.aw-layout-header a {
+    color: #ffffff;
+    fill: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+.aw-layout-headerProperties .aw-widgets-propertyNonEditValue {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.aw-base-tabTitle, 
+a.aw-base-tabTitle, 
+.aw-base-tabTitle:visited, 
+a.aw-base-tabTitle:visited,
+.aw-base-tabTitleSelected, 
+a.aw-base-tabTitleSelected{
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 700;
+     font-size: 14px;
+}
+
+.aw-base-tabTitle:hover, 
+a.aw-base-tabTitle:hover {
+    color: #dc6914;    
+}
+
+.aw-base-tabTitleSelected:hover, 
+a.aw-base-tabTitleSelected:hover,
+.aw-base-tabTitleSelected, 
+a.aw-base-tabTitleSelected {
+    color: #dc6914;
+    border-bottom: 2px;
+    border-color: #dc6914;
+    border-style: solid;
+}
+/* orange for the top level */
+.aw-layout-subLocationTitles .aw-base-tabTitle:hover, 
+a.aw-layout-subLocationTitles .aw-base-tabTitle:hover {
+    color: #dc6914;    
+}
+
+.aw-layout-subLocationTitles .aw-base-tabTitleSelected:hover, 
+a.aw-layout-subLocationTitles .aw-base-tabTitleSelected:hover,
+.aw-layout-subLocationTitles .aw-base-tabTitleSelected, 
+a.aw-layout-subLocationTitles .aw-base-tabTitleSelected {
+    color: #dc6914;
+    border-bottom: 2px;
+    border-color: #dc6914;
+    border-style: solid;
+}
+
+
+.aw-base-tabTitle, 
+a.aw-base-tabTitle, 
+.aw-base-tabTitle:visited, 
+a.aw-base-tabTitle:visited,
+{
+    color: #464646;
+    border-bottom: 2px;
+    border-color: transparent;
+    border-style: solid;
+
+}
+
+.aw-commands-showIconLabel .aw-layout-infoCommandbar, 
+.aw-commands-showIconLabel .aw-layout-navigationCommandbar {
+    padding-top: 59px;
+    margin-top:0;
+}
+
+.aw-jswidget-tabBar {
+    padding-bottom: 5px;
+}
+
+.aw-jswidget-tab .aw-base-tabTitle, 
+.aw-jswidget-tab .aw-base-tabTitleSelected {
+    height: 16px;
+}
+
+/*.aw-layout-progressBar {
+    height: 6px;
+    margin-bottom: 0;
+}*/
+.aw-layout-subLocationTitles .aw-jswidget-tabBar::before {
+    content: "";
+    width: 44px;
+    background: #006487;
+    position: fixed;
+    height: 76px;
+    left: 0px;
+    top: 91px;
+    overflow: hidden;
+}
+
+.aw-commands-showIconLabel .aw-layout-subLocationTitles .aw-jswidget-tabBar::before {
+    width: 56px;
+}
+
+.aw-layout-subLocationTitles .aw-jswidget-tabBar {
+    padding-top:9px;
+    padding-left: 11px;
+    font-size:14px;
+}
+
+.aw-layout-locationPanel {
+    padding-right:15px;
+}
+
+.aw-layout-locationPanel::after {
+    left: calc(100% - 15px);
+    content: "";
+    width: 15px;
+    position: absolute;
+    right: 42px;
+    top: 0;
+    height: 100%;
+    background: #3c91af;
+}
+
+.aw-layout-globalToolbarPanel {
+    z-index: 1;
+}
+
+.aw-layout-globalToolbar::after {
+    left: calc(100% - 15px);
+    content: "";
+    width: 15px;
+    position: absolute;
+    right: 42px;
+    top: 0;
+    height: 25px;
+    background: #f0f0f0;
+}
+.aw-layout-workareaTitle {
+    padding-left: 11px;
+}
+
+.aw-layout-infoPanelContainer .aw-layout-panelMain {
+    border-right: 1px;
+    border-style: solid;
+    border-color: #cde6eb;
+}
+
+.aw-layout-panelMain .aw-blk-button {
+    background-color: #147391   
+}
+
+.aw-layout-panelTitle {
+    background-color: #005578;
+    color: #fff;
+}
+.noty_container_type_error {
+    background-color: #005578;
+}
+
+.aw-layout-popup .aw-widgets-cellListItem {
+    color: #1e1e1e;
+}
+
+.aw-tcWidgets-modelTypeCellTitle {
+    font-size: 16px;
+}
+
+.aw-gateway-locationPanel .aw-layout-infoCommandbar {
+    background-color: #fff;
+}
+
+/* header */
+.aw-layout-progressBar {
+    width: 100%;
+    height: 2px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+}
+
+.aw-layout-locationTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.aw-layout-locationTitlePanel {
+     height: 23px;
+     margin-bottom: 0;
+}
+
+.aw-widgets-propertyValueLink,
+.aw-widgets-propertyNonEditValue {
+   font-size:12px;
+}
+
+.aw-base-backButton .aw-base-icon {
+     width: 20px;
+     height: 20px;
+}
+
+button.aw-base-backButton {
+   height:20px;
+   margin-left: 10px;
+   margin-right: 3px;
+}
+
+.aw-layout-header a {
+     font-size: 12px;
+}
+
+.aw-layout-workareaCommandbar .aw-commands-commandIconButton {
+    height: 34px;
+    padding-top: 3px;
+}
+
+.aw-widgets-propertyLabel,
+.aw-widgets-propertyLabelTop {
+    font-size: 12px;
+}
+
+.aw-layout-headerIcon .aw-base-icon {
+    height: 20px;
+    width: 20px;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+aw-header .aw-widgets-modelObjectThumbnail {
+    height: 24px;
+    width: 24px;
+}
+
+.aw-uiwidgets-searchBoxContainer {
+     height:20px;
+}
+
+.aw-uiwidgets-searchBoxContainer input.aw-uiwidgets-searchBox {
+     font-size: 12px;
+     height:20px
+}
+
+.aw-uiwidgets-searchBoxIcon {
+     width: 16px;
+     height: 16px;
+}
+
+.aw-search-simpleSearch {
+     height: 24px;
+}
+
+.aw-layout-subLocationTitles {
+     padding: 0 44px 18px;
+}
+
+.aw-widgets-selectedCrumb {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.aw-widgets-crumbLink {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.aw-layout-fxbreadCrumbs .aw-jswidget-controlArrow,
+.aw-layout-fxbreadCrumbs .aw-jswidget-controlArrowNoFloat {
+    margin-top: 1px;
+    height: 24px;
+}
+
+.aw-jswidget-controlArrow,
+.aw-jswidget-controlArrowNoFloat {
+    right: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+}
+
+/* Page */
+.aw-layout-panelSectionTitle {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: .5px;
+    margin-bottom: 3px;
+}
+
+.aw-layout-panelSectionTitleChevron {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px
+}
+
+.aw-layout-panelMain .aw-blk-button {
+    background-color: #147391   
+}
+
+.aw-layout-panelTitle {
+    background-color: #005578;
+    color: #fff;
+}
+
+.aw-layout-panelTitle {
+    height:34px;
+}
+
+.aw-xrt-tabsContainer {
+    padding: 0
+}
+
+ /* cell list */
+.aw-widgets-cellListCellImage,
+.aw-widgets-cellListCellImage .aw-base-icon {
+    max-width: 24px;
+    max-height: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.aw-widgets-cellListCellTitle {
+    font-size: 16px;
+}
+
+.aw-widgets-cellListItem .aw-base-small {
+    font-size: 12px;
+}
+
+.aw-widgets-modelObjectTypeIconOverlay>.aw-base-icon {
+    visibility: hidden;
+}
+
+aw-tile-canvas .mainGatewayDiv {
+    margin: 20px 0 0;
+}
+
+.aw-tile-tileGroups {
+    margin: -80px 0 0 -40px;
+}
+
+
+.aw-ui-filterCategoryLabel {
+    font-size: 16px;
+}
